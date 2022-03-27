@@ -1,0 +1,33 @@
+#containerNewProduct
+{
+    padding: 2%;
+text-align: center;
+margin-left: 15%;
+margin-right: 15%;
+}
+#containerNewUser
+{
+    padding: 2%;
+text-align: center;
+margin-left: 15%;
+margin-right: 15%;
+}
+#containerProductList
+{
+    padding: 2%;
+text-align: center;
+margin-left: 15%;
+margin-right: 15%;
+}
+
+.form-group
+{
+   
+    padding: 10px;
+}
+#productbutton
+{
+  border-radius: 15px;  
+  box-shadow: 0 9px 18px 0 #333333, 0 8px 24px 0 #333333;
+
+}

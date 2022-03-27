@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import DatePicker from "react-datepicker";
+import "./style.css";
 import "react-datepicker/dist/react-datepicker.css";
 
 export default class CreateProducts extends Component {
@@ -85,7 +86,7 @@ export default class CreateProducts extends Component {
 
     render() {
         return (
-            <div>
+            <div id="containerNewProduct" >
                 <h3>Create New Product Log</h3>
                 <form onSubmit={this.onSubmit}>
                     <div className="form-group">
@@ -108,6 +109,7 @@ export default class CreateProducts extends Component {
                     <div className="form-group">
                         <label>Product Name: </label>
                         <input type="text"
+                            placeholder="Product Name"
                             required
                             className="form-control"
                             value={this.state.productname}
@@ -134,7 +136,7 @@ export default class CreateProducts extends Component {
                     </div>
 
                     <div className="form-group">
-                        <input type="submit" value="Create Product Log" className="btn btn-primary" />
+                        <input id="productbutton" type="submit" value="Create Product Log" className="btn btn-success" />
                     </div>
                 </form>
             </div>

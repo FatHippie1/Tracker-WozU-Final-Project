@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./style.css";
 import axios from 'axios';
 
 
@@ -10,7 +11,7 @@ const Product = props => (
         <td>{props.product.quantity}</td>
         <td>{props.product.date.substring(0, 10)}</td>
         <td>
-            <button onClick={() => { props.deleteProduct(props.product._id) }}>delete</button>
+            <button id="productbutton" className="btn btn-success" onClick={() => { props.deleteProduct(props.product._id) }}>delete</button>
         </td>
     </tr>
 )
@@ -51,7 +52,7 @@ export default class ProductsList extends Component {
 
     render() {
         return (
-            <div>
+            <div id="containerProductList">
                 <h3>Inventory Product List</h3>
                 <table className="table">
                     <thead className="thead-light">
